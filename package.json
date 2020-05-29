@@ -11,8 +11,10 @@
   "author": "Lindsay Evans",
   "license": "ISC",
   "dependencies": {
+    "contrast": "^1.0.1",
     "fast-xml-parser": "^3.17.3",
     "sketch-constructor": "^1.20.1",
+    "title-case": "^3.0.2",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.3"
   }
