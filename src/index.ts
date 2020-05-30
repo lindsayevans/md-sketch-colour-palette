@@ -12,10 +12,11 @@ import * as contrast from 'contrast';
 
 import { AndroidXmlParser } from './AndroidXmlParser';
 
+// TODO: Support other types
 const parser = new AndroidXmlParser();
 
 (async () => {
-  const palettes = await parser.parseResourceXml('./example.xml');
+  const palettes = await parser.parseResourceXml('./colours.xml');
 
   const newSketch = new Sketch();
 
@@ -119,5 +120,5 @@ const parser = new AndroidXmlParser();
     });
   });
 
-  newSketch.build('palette.sketch', 0);
+  newSketch.build('colours.sketch', 0);
 })();

@@ -1,20 +1,28 @@
 {
   "name": "md-sketch-colour-palette",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "Builds a Sketch file containing symbols & layer styles based on a Material Design colour palette file",
+  "author": "Lindsay Evans <linz@linz.id.au>",
+  "license": "MIT",
+  "main": "./src/index.ts",
   "scripts": {
-    "start": "ts-node ./index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ts-node ./src/index.ts",
+    "test": "ts-node ./src/index.ts"
   },
-  "keywords": [],
-  "author": "Lindsay Evans",
-  "license": "ISC",
+  "keywords": [
+    "sketch",
+    "material",
+    "colour",
+    "color",
+    "palette"
+  ],
   "dependencies": {
     "contrast": "^1.0.1",
     "fast-xml-parser": "^3.17.3",
     "sketch-constructor": "^1.20.1",
-    "title-case": "^3.0.2",
+    "title-case": "^3.0.2"
+  },
+  "devDependencies": {
     "ts-node": "^8.10.2",
     "typescript": "^3.9.3"
   }
