@@ -3,3 +3,5 @@
 tsconfig.json
 src
 RELEASE_PROCESS.md
+colours.xml
+*.sketch
