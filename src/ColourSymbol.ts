@@ -7,7 +7,7 @@ import {
   Text,
 } from 'sketch-constructor';
 import { titleCase } from 'title-case';
-import * as contrast from 'contrast';
+import contrast from 'contrast';
 
 import { Palette } from './Palette';
 import { Colour } from './Colour';
