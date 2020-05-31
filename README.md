@@ -10,12 +10,12 @@ Builds a Sketch file containing symbols & layer styles based on a Material Desig
 
 - [Node.js](https://nodejs.org/) - tested with v12 & v14
 
-## Running
+## Usage
 
 1. Create a colour palette using the [Material Design Palette Generator](http://mcg.mbitson.com/)
 2. Export as **Android XML**, save to `colours.xml`
-3. Run: `npx mat-sketch-palette`
-4. Open `colours.sketch`
+3. Run `npx mat-sketch-palette`
+4. Colour palettes will be generated in `colours.sketch`
 
 ## Command line options
 
@@ -23,11 +23,32 @@ Builds a Sketch file containing symbols & layer styles based on a Material Desig
 npx mat-sketch-palette [options]
 ```
 
-| Option            | Description                                             |
-| ----------------- | ------------------------------------------------------- |
-| --input=filename  | The input file<br>Default: colours.xml<br>Alias: -i     |
-| --output=filename | The output file<br>Default: colours.sketch<br>Alias: -o |
-| --quiet           | Don't print anything<br>Default: false<br>Alias: -q     |
+| Option            | Description                                                        |
+| ----------------- | ------------------------------------------------------------------ |
+| --input=filename  | The input file<br>Default: colours.xml<br>Alias: -i                |
+| --output=filename | The output file<br>Default: colours.sketch<br>Alias: -o            |
+| --quiet           | Don't print anything to the console<br>Default: false<br>Alias: -q |
+
+## What it does
+
+### Create symbols & styles
+
+- Each colour will have a symbol created with it's name & hex code, plus a background fill using the colour.
+- Each colour will also have layer style created using the colour as a fill.
+- Each palette will have a symbol created using the all of the colour symbols it contains.
+
+### Naming
+
+For each colour we split the name on the underscore character, then use the first part as the palette name and the second as the colour name.
+
+Symbols:
+
+- `Colours/[Palette Name]`
+- `Colours/[Palette Name]/[Colour Name]`
+
+Styles:
+
+- `Colours/[Palette Name]/[Colour Name]`
 
 ## TODO
 
