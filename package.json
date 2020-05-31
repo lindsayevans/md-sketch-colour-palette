@@ -1,6 +1,6 @@
 {
   "name": "mat-sketch-palette",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Builds a Sketch file containing symbols & layer styles based on a Material Design colour palette file",
   "author": "Lindsay Evans <linz@linz.id.au> (https://linz.id.au/)",
   "license": "MIT",
