@@ -6,12 +6,14 @@
     "declaration": true,
     "sourceMap": true,
     "outDir": "./lib",
+    "rootDir": "./src",
     "strict": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "strictPropertyInitialization": false
+    "strictPropertyInitialization": false,
+    "resolveJsonModule": true
   },
-  "include": ["./src/index.ts", "./src/typings.d.ts"]
+  "include": ["./src/index.ts", "./src/cli.ts", "./src/typings.d.ts"]
 }

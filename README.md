@@ -16,12 +16,23 @@ This project is currently in the early stages of development, so things will mos
 
 1. Create a colour palette using the [Material Design Palette Generator](http://mcg.mbitson.com/)
 2. Export as **Android XML**, save to `colours.xml`
-3. Run: `npm start`
+3. Run: `npx mat-sketch-palette`
 4. Open `colours.sketch`
+
+## Command line options
+
+```sh
+npx mat-sketch-palette [options]
+```
+
+| Option            | Description                                             |
+| ----------------- | ------------------------------------------------------- |
+| --input=filename  | The input file<br>Default: colours.xml<br>Alias: -i     |
+| --output=filename | The output file<br>Default: colours.sketch<br>Alias: -o |
+| --quiet           | Don't print anything<br>Default: false<br>Alias: -q     |
 
 ## TODO
 
-- Proper CLI
 - Support other input & output formats
 - More flexible palette name/colour ID detection
 - GUI (Sketch plugin? Desktop app?)
