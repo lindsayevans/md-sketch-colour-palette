@@ -1,0 +1,5 @@
+.nvmrc
+.vscode
+tsconfig.json
+src
+RELEASE_PROCESS.md
